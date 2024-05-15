@@ -13,28 +13,28 @@ export const Header = () => {
             alt="logo"
             />
         </div>
-        <nav class="flex justify-center space-x-4 bg-red-200 ">
+        <nav className="flex justify-center space-x-4 bg-red-200 ">
             <a
             href="#"
-            class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
             >
             Home
             </a>
             <a
             href="#"
-            class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
             >
             Team
             </a>
             <a
             href="#"
-            class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
             >
             Page 3
             </a>
             <a
             href="#"
-            class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
             >
             Page 4
             </a>
