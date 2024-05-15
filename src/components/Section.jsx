@@ -25,7 +25,7 @@ export const Section = () => {
 
     let array1 = [];
     for (var i = 0; i < 5; i++) {
-        array1[i] = getRandomArbitrary(0, 151);
+        array1[i] = getRandomArbitrary(1, 151);
       //console.log(array1);
     }
 
