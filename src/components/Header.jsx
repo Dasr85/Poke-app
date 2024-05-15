@@ -1,43 +1,22 @@
-//import './Header.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import logo from '../assets/img/PokéApp_Logo.png'
+
+import './Header.css';
 
 export const Header = () => {
     return (
     <>
-        <header className="flex flex-col   ">
-        <div className="m-4 grid justify-items-center ">
-            <img
-            className="rounded  bg-red-200 m-4 justify-self-center p-2"
-            src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
-            alt="logo"
-            />
+        <header className="estilo__header container">
+        <div className="logo">
+            <img src={logo} alt="logo"/>
         </div>
-        <nav className="flex justify-center space-x-4 bg-red-200 ">
-            <a
-            href="#"
-            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
-            >
-            Home
-            </a>
-            <a
-            href="#"
-            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
-            >
-            Team
-            </a>
-            <a
-            href="#"
-            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
-            >
-            Page 3
-            </a>
-            <a
-            href="#"
-            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
-            >
-            Page 4
-            </a>
+        <nav className="estilo__navbar">
+            <a href="#">Home</a>
+            <a href="#">Team</a>
+            <a href="#">Page 3</a>
+            <a href="#">Page 4</a>
         </nav>
         </header>
     </>

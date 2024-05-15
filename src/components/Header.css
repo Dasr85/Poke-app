@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+header,footer{
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+p {
+    font-size: 2.0em;
+}
+
+/* .container{
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+
+.estilo__header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 0, 0);
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logo{
+justify-self: center;
+}
+
+.estilo__navbar{
+    font-size: 2em;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+/* <header className="flex flex-col   ">
+        <div className="m-4 grid justify-items-center ">
+            <img
+            className="rounded  bg-red-200 m-4 justify-self-center p-2"
+            src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
+            alt="logo"
+            />
+        </div>
+        <nav className="flex justify-center space-x-4 bg-red-200 ">
+            <a
+            href="#"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            >
+            Home
+            </a>
+            <a
+            href="#"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            >
+            Team
+            </a>
+            <a
+            href="#"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            >
+            Page 3
+            </a>
+            <a
+            href="#"
+            className="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-blue-100 hover:text-slate-900"
+            >
+            Page 4
+            </a>
+        </nav>
+        </header> */
