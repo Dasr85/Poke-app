@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import logo from '../assets/img/PokéApp_Logo.png'
+import logo from '../assets/img/Logo.png'
 
 import './Header.css';
 
@@ -12,11 +12,14 @@ export const Header = () => {
         <div className="logo">
             <img src={logo} alt="logo"/>
         </div>
-        <nav className="estilo__navbar">
-            <a href="#">Home</a>
-            <a href="#">Team</a>
-            <a href="#">Page 3</a>
-            <a href="#">Page 4</a>
+        <nav >
+            <ul className="estilo__navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/pokemonlist">Lista de Pokemon</a></li>
+            </ul>
+            
+            {/* <a href="#">Page 3</a>
+            <a href="#">Page 4</a> */}
         </nav>
         </header>
     </>

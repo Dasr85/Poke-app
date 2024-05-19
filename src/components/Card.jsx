@@ -37,19 +37,17 @@ export const Card = ({ id }) => {
     });
     tipos = tipos.join(''); */
     let name = poke.name;
-    console.log(poke.name);
+    // console.log(poke.name);
     let height = poke.height;
-    console.log(poke.height);
+    // console.log(poke.height);
     let weight = poke.weight;
-    console.log(poke.weight);
-    console.log(poke.sprites.other['official-artwork'].front_default);
+    // console.log(poke.weight);
+    // console.log(poke.sprites.other['official-artwork'].front_default);
     let imagen = poke.sprites.other['official-artwork'].front_default;
-
-   
 
     return [name,imagen,height,weight];
 }
-console.log('aca')
+// console.log('aca')
 console.log(pokeData)
 
     return (
@@ -60,7 +58,7 @@ console.log(pokeData)
         <img src={pokeData[1]} alt="pokemon"/>
       </div>
       <div className="cardText">Peso: {pokeData[2]}</div>
-      <div className="cardText">Altura: {pokeData[2]}</div>
+      <div className="cardText">Altura: {pokeData[3]}</div>
       <div className="cardText">Id: #{id}</div>
     </div>
      

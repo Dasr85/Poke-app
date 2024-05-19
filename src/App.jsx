@@ -1,26 +1,18 @@
-import { useState } from 'react';
-//import reactLogo from './assets/react.svg';
-//import viteLogo from '/vite.svg';
-//import './App.css'
-import { Header } from './components/Header.jsx';
-import { Section } from './components/Section.jsx';
-import { arrayIds } from './utils/randomld.js';
-import { Footer } from './components/Footer.jsx'
-//console.log(arrayIds());
+import {BrowserRouter,Routes,Route,Link} from "react-router-dom"; 
+import { Home } from "./pages/Home.jsx";
+import { Pokedetalles } from "./pages/Pokedetalles.jsx"; 
+import { Pokemones } from './pages/Pokemones.jsx';
+// import "./App.css"
 
-export const App = ()=> {
-  //const [count, setCount] = useState(0)
-  let URL = 'https://pokeapi.co/api/v2/pokemon/';
-
-  /*   fetch(URL)
-    .then((response) => response.json())
-    .then((data) => console.log(data)); */
+export const App = ()  =>{
 
   return (
-    <>
-      <Header />
-      <Section />
-      <Footer />
-    </>
-  );
+    <BrowserRouter>
+    <Routes>
+    <Route path = "/" element = { <Home/>} />
+    <Route path = "/detalles/:Id" element = { <Pokedetalles/>}/>
+    <Route path = "/pokemonlist" element = { <Pokemones/>}/>
+    </Routes>
+    </BrowserRouter>
+  )
 }
