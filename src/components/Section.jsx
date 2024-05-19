@@ -38,9 +38,9 @@ export const Section = () => {
     <>
         <div className="flex flex-col ">
         <div className="flex justify-center">
-            <h2 className="p-2 m-4 bg-green-200 ">
-            Select your
-            <span className="font-bold italic text-purple-600 opacity-85">
+            <h2 className="teamTitle">
+            Elegi tu
+            <span className="font-bold  text-purple-600 opacity-85">
                 {' '}
                 Team
             </span>

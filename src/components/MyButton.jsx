@@ -4,17 +4,18 @@ import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 //import estilos
-//import './Section.css';
+import './Section.css';
+import './MyButton.css';
 
 export const MyButton = ({ color, onClick, ids }) => {
     let clase = '';
 
     if (color === 'rojo') {
-    clase = 'rounded bg-red-200 p-2 ';
+    clase = 'botonRojo';
     } else if (color === 'azul') {
-    clase = 'rounded bg-blue-200 p-2';
+    clase = 'botonAzul';
     } else if (color === 'amarillo') {
-    clase = 'rounded bg-yellow-200 p-2';
+    clase = 'botonAmarillo';
     } else {
     clase = 'rounded bg-slate-200 p-2';
     }
@@ -28,3 +29,4 @@ export const MyButton = ({ color, onClick, ids }) => {
     </>
     );
 };
+

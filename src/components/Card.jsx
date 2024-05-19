@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 //import estilos
-//import './Card.css';
+import './Card.css';
 let URL = 'https://pokeapi.co/api/v2/pokemon/';
 
 /*   fetch(URL)
@@ -54,24 +54,16 @@ console.log(pokeData)
 
     return (
     <>
-        <div className="max-w-48 rounded overflow-hidden shadow-lg shadow-blue-900/50 border-slate-300 border">
-        <img className="w-full " src={pokeData[1]} alt="pokemon" />
-        <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">{pokeData[0]}</div>
-            <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            height {pokeData[2]}
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            weight {pokeData[2]}
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #{id}
-            </span>
-        </div>
-        </div>
+      <div className='cardFrame'>
+      <div className='cardTitle'>{pokeData[0]}</div>
+      <div className="cardImage">
+        <img src={pokeData[1]} alt="pokemon"/>
+      </div>
+      <div className="cardText">Peso: {pokeData[2]}</div>
+      <div className="cardText">Altura: {pokeData[2]}</div>
+      <div className="cardText">Id: #{id}</div>
+    </div>
+     
     </>
     );
 };
